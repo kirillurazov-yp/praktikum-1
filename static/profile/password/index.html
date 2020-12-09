@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/shared/css/_colors.css">
+  <link rel="stylesheet" href="/shared/css/reset.css">
+  <link rel="stylesheet" href="/shared/css/_forms.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="back">
+      <a href="/profile/" class="back__button">
+        <svg class="back__icon" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="13" y="6.80005" width="11" height="1.6" transform="rotate(-180 13 6.80005)" fill="currentColor" />
+          <path d="M6 11L2 6L6 1" stroke="currentColor" stroke-width="1.6" />
+        </svg>
+      </a>
+    </div>
+    <main class="profile">
+      <form>
+        <div class="avatar"></div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="old_password"
+            name="old_password"
+            class="form-group__input"
+            placeholder="Old password"
+            autocomplete="current-password"
+            required
+          >
+          <label for="old_password" class="form-group__label">Old password</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="new_password"
+            name="new_password"
+            class="form-group__input"
+            placeholder="New password"
+            autocomplete="new-password"
+            required
+          >
+          <label for="new_password" class="form-group__label">New password</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="repeat-password"
+            class="form-group__input"
+            placeholder="Repeat password"
+            autocomplete="new-password"
+            required
+          >
+          <label for="repeat-password" class="form-group__label">Repeat password</label>
+        </div>
+        <div class="form-group profile__btn-container">
+          <button type="submit" class="form-group__btn">Save</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="/shared/js/onSubmit.js" type="application/javascript"></script>
+</body>
+</html>

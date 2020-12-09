@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: var(--black);
+}
+
+a {
+  display: inline;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-active);
+  text-decoration: none;
+}
+
+svg,
+svg * {
+  color: inherit;
+}

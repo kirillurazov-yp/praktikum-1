@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="/shared/css/_colors.css">
+  <link rel="stylesheet" href="/shared/css/reset.css">
+  <link rel="stylesheet" href="/shared/css/_forms.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="signin">
+      <header>
+        <h1 class="signin__title">Sign In</h1>
+      </header>
+      <main class="signin__main">
+        <form>
+          <div class="form-group">
+            <input type="text" id="login" name="login" class="form-group__input" placeholder="Login" required>
+            <label for="login" class="form-group__label">Login</label>
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-group__input"
+              placeholder="Password"
+              autocomplete="new-password"
+              required
+            >
+            <label for="password" class="form-group__label">Password</label>
+          </div>
+          <div class="form-group signin__btn-container">
+            <button type="submit" class="form-group__btn">Sign In</button>
+          </div>
+        </form>
+        <div class="signin__link">
+          <a href="/signup">Sign Up</a>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="/shared/js/onSubmit.js" type="application/javascript"></script>
+</body>
+</html>

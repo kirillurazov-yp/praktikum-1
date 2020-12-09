@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/shared/css/_colors.css">
+  <link rel="stylesheet" href="/shared/css/reset.css">
+  <link rel="stylesheet" href="/shared/css/_forms.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="back">
+      <a href="/" class="back__button">
+        <svg class="back__icon" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="13" y="6.80005" width="11" height="1.6" transform="rotate(-180 13 6.80005)" fill="currentColor" />
+          <path d="M6 11L2 6L6 1" stroke="currentColor" stroke-width="1.6" />
+        </svg>
+      </a>
+    </div>
+    <main class="profile">
+      <form>
+        <div class="avatar"></div>
+        <h1 class="profile__name">Name</h1>
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-group__input"
+            placeholder="E-mail"
+            required
+            value="pochta@yandex.ru"
+            disabled
+          >
+          <label for="email" class="form-group__label">E-mail</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="login"
+            name="login"
+            class="form-group__input"
+            placeholder="Login"
+            required
+            value="ivanivanov"
+            disabled
+          >
+          <label for="login" class="form-group__label">Login</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            class="form-group__input"
+            placeholder="First name"
+            value="Name"
+            disabled
+          >
+          <label for="first_name" class="form-group__label">First name</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="second_name"
+            name="second_name"
+            class="form-group__input"
+            placeholder="Second name"
+            value="Иванов"
+            disabled
+          >
+          <label for="second_name" class="form-group__label">Second name</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="display_name"
+            name="display_name"
+            class="form-group__input"
+            placeholder="Display name"
+            disabled
+          >
+          <label for="display_name" class="form-group__label">Display name</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-group__input"
+            placeholder="Phone"
+            value="+7 (987) 654 32 10"
+            disabled
+          >
+          <label for="phone" class="form-group__label">Phone</label>
+        </div>
+      </form>
+
+      <div class="profile__links">
+        <a href="/profile/edit/">Edit profile</a>
+        <a href="/profile/password/">Change password</a>
+        <a href="/signin/">Sign out</a>
+      </div>
+    </main>
+  </div>
+
+  <script src="/shared/js/onSubmit.js" type="application/javascript"></script>
+</body>
+</html>
